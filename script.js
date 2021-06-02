@@ -27,7 +27,8 @@ ArToolkitContext.init(function(){
 	camera.projectionMatrix.copy(ArToolkitContext.getProjectionMatrix());
 });
 
-var ArMarkerControls = new THREEx.ArMarkerControls(ArToolkitContext,camera{
+var ArMarkerControls = new THREEx.ArMarkerControls(ArToolkitContext,camera,
+{
 	type:'pattern',
 	patternUrl:'pattern-Metropolis_Summer.patt',
 	changeMatrixMode: 'cameraTransformMatrix'
