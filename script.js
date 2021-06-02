@@ -7,17 +7,17 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
+
 var ArToolkitSource = new THREEx.ArToolkitSource({
 	sourceType: "webcam",
 
 })
-
 ArToolkitSource.init(function(){
 	setTimeout(function(){
 		ArToolkitSource.onResizeElement();
 		ArToolkitSource.copyElementSizeTo(renderer.domElement);
 	},2000)
-});
+})
 
 var ArToolkitContext = new THREEx.ArToolkitContext({
 	cameraParametersUrl: 'camera_para.dat',
