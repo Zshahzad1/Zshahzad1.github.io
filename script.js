@@ -8,7 +8,7 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 var ArToolkitSource = new THREEx.ArToolkitSource({
-	sourceType: "webcam",
+	sourceType: "image",
 
 })
 
