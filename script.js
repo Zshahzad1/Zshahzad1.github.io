@@ -30,7 +30,7 @@ ArToolkitContext.init(function(){
 var ArMarkerControls = new THREEx.ArMarkerControls(ArToolkitContext,camera,
 {
 	type:'pattern',
-	patternUrl:'pattern-white-wallpaper-8.patt',
+	patternUrl:'pattern-Metropolis_Summer.patt',
 	changeMatrixMode: 'cameraTransformMatrix'
 
 });
